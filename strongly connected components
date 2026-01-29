@@ -1,0 +1,54 @@
+class Solution {
+  public:
+   void dfs(vector<vector<int>> &adj,vector<int>&visited,int i,stack<int>&st,int V){
+      int node=i;
+      visited[node]=1;
+      for(int i=0;i<adj[node].size();i++){
+          int curr=adj[node][i];
+          if(visited[curr]==0){
+             dfs(adj,visited,curr,st,V);  
+          }
+      }
+      st.push(node);
+   }
+   void  dfsReverse(vector<vector<int>> &reverse,int node,stack<int>&st,int V,vector<int>&visited){
+      visited[node]=1;
+      for(int i=0;i<reverse[node].size();i++){
+          int curr=reverse[node][i];
+          if(visited[curr]==0){
+             dfsReverse(reverse,curr,st,V,visited);  
+          } 
+   }
+   }
+    int kosaraju(vector<vector<int>> &adj) {
+        // code here
+        int V=adj.size();
+        stack<int>st;
+       vector<int>visited(V,0);
+       vector<vector<int>>reverse(V);
+       for(int i=0;i<V;i++){
+           if(visited[i]==0){
+               dfs(adj,visited,i,st,V);
+           }
+       }
+           for(int i=0;i<V;i++){
+               for(int j=0;j<adj[i].size();j++){
+                   reverse[adj[i][j]].push_back(i);
+               }
+           }
+          for(int i=0;i<V;i++){
+              visited[i]=0;
+          }
+          int cnt=0;
+          while(!st.empty()){
+              int u=st.top();
+              st.pop();
+              if(visited[u]==0){
+                  dfsReverse(reverse,u,st,V,visited);
+                  cnt++;
+              }
+          }
+           
+    return cnt;   }
+    
+};
