@@ -1,91 +1,48 @@
-🟣🔵 U-Quiz — Interactive Learning Platform 🔵🟣
-🎓 Transform YouTube Learning into Interactive Quizzes
-   
+# 🎯 U-Quiz — Interactive Learning Platform
 
-✨ Introduction
-U-Quiz is a modern gamified learning platform that turns YouTube videos into interactive quizzes.
+🔗 Transform YouTube Learning into Interactive Quizzes
 
-Instead of passively watching content, users can test their understanding, compete with others, and track learning progress through leaderboards and dashboards.
+---
 
-The goal is to make learning engaging, competitive, and fun.
+## 🚀 Overview
+U-Quiz is a full-stack interactive learning platform that converts YouTube video content into engaging quizzes. It helps users learn actively instead of passively watching videos.
 
-🟣 Tech Stack
-Technology	Purpose
-HTML,CSS	Frontend UI
-Node.js / Express	Backend API
-MongoDB	Database
-TailwindCSS	Styling
-JWT	Authentication
-Gemini API	AI-powered question generation
-YouTube Data API	Fetch video metadata
-🚀 Features
-🔐 Authentication
-Secure user login using Email / Password and Google Sign-In.
+---
 
-🎥 YouTube Quiz Generator
-Automatically generate MCQs from YouTube videos.
+## 🛠️ Tech Stack
 
-🧠 Multiple Question Types
-Supports:
+- 🌐 Frontend: HTML, CSS, TailwindCSS  
+- ⚙️ Backend: Node.js, Express.js  
+- 🗄️ Database: MongoDB  
 
-Multiple Choice Questions
-True / False
-Fill in the Blank
-👤 Personalized Dashboard
-Track progress, performance and learning statistics.
+---
 
-🏆 Leaderboard
-Compete with other users and climb the ranks.
+## ✨ Features
 
-🎨 Modern UI
-Clean blue-purple gradient interface for immersive experience.
+- 🎥 Fetch YouTube videos  
+- 🧠 Generate quizzes from video content  
+- 📊 Interactive learning experience  
+- ⚡ Fast and responsive UI  
 
-⚡ Quick Start
-1️⃣ Clone the Repository
-git clone https://github.com/yourusername/uquiz.git
-2️⃣ Navigate to Project Folder
-cd uquiz
-3️⃣ Install Dependencies
+---
+
+## 📸 Screenshots
+
+### 🔹 Home Page
+![Home](https://raw.githubusercontent.com/Diyashri19/uquiz/main/images/home.png)
+
+### 🔹 Quiz Interface
+![Quiz](https://raw.githubusercontent.com/Diyashri19/uquiz/main/images/quiz.png)
+
+### 🔹 Dashboard
+![Dashboard](https://raw.githubusercontent.com/Diyashri19/uquiz/main/images/dashboard.png)
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/Chaitanya11-web/U-QUIZ.git
+cd U-QUIZ
 npm install
-4️⃣ Run Development Server
-npm run dev
-🔵 Learning Flow
-🔐 Login / Register
-Create your account securely.
-
-🎥 Generate Quiz
-Choose a YouTube video or playlist.
-
-🧠 Attempt Quiz
-Answer interactive MCQs and test your knowledge.
-
-📊 Track Progress
-Monitor performance in the dashboard.
-
-🏆 Compete
-Climb the leaderboard and challenge friends.
-
-🖼️ Screenshots
-🔐 Login & 📚 Quiz
-Login Page Quiz Interface
-Figure 1: Login interface with email and Google sign-in Figure 2: Interactive quiz interface
-
-👤 Dashboard & 🏆 Leaderboard
-Dashboard Leaderboard
-Figure 3: User dashboard with profile details Figure 4: Leaderboard showing rankings and scores
-
-🎥 Quiz Generator & 🌐 Landing Page
-Quiz Generator Landing Page
-Figure 5: YouTube video quiz generator Figure 6: Landing page highlighting features
-
-📦 Assets
-🎨 Logo & Branding: Blue-purple gradient theme
-📸 Screenshots: Login, Dashboard, Leaderboard, Quiz Generator
-🎬 Interactive UI Components
-🌟 Future Roadmap
-🤖 AI-Powered Question Generation
-📱 Mobile App Version
-🌍 Social Sharing of Quiz Results
-🧑‍🤝‍🧑 Multiplayer Quiz Mode
-🔵 Made with passion for interactive learning
-U-Quiz — Elevate Your YouTube Learning Experience
+npm start
